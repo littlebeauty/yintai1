@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,ul ,li,ol,table,tr,td,dl,dt,dd,img input p div form h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;		
+}
+body{
+	font-family:"微软雅黑",Arial;
+	}
+a {
+	text-decoration:none;
+	}
+img{border:0;}
+ul li{
+	list-style:none;	
+}
+body a:hover{color:#e50048;}

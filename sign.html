@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/log.css">
+	<script type="text/javascript" src = "js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#tele").click(function(){
+				$("#testCode").html(testCode(6))
+			});
+			var oBtn = document.getElementById("btn");
+			oBtn.onclick = function(){
+				//对于用户名格式的判断在这里执行
+				//1、对用户名中的空格进行剔除
+				var oPhone = document.getElementById("phone");
+				var oPassword = document.getElementById("password");
+				var oSure  = document.getElementById("sure");
+				// var ocode = document.getElementById("testCode")
+				var newValue = oPhone.value.replace(/ /ig, "");
+				var newValue1 = oPassword.value.replace(/ /ig, "");
+				var oTele = document.getElementById("tele");
+				oPhone.value = newValue;
+				if(newValue.length > 11 || newValue.length < 11){
+					alert("电话号码错误");
+				}else if(oSure.value != oPassword.value){
+					alert("两次密码输入不一致");
+				}else if(newValue1.length > 10 || newValue1.length < 6){
+					alert("密码长度应该为6~10位");
+				}else{
+					//用户名是对的
+					$("#btn").css("background-color","#e5004f");
+				}
+			}
+		}) 
+			//生成验证码
+			function testCode(n){
+				//n 生成几位验证码
+				var arr = []; //数组存储验证码
+				for(var i = 0; i < n; i++){
+					//<1>随机0~100的数
+					var tmp = parseInt(Math.random() * 100);
+					if(tmp < 10){ //数字
+						arr.push(tmp);
+					}else if(tmp >= 65 && tmp <= 90){ //大写字母
+						var str = String.fromCharCode(tmp);
+						arr.push(str);
+					}else if(tmp >= 17 && tmp <= 42){ //小写字母
+						var str = String.fromCharCode(tmp + 80);
+						arr.push(str);
+					}else{
+						//无效数字
+						i--;
+					}
+				}
+				return arr.join("");
+			}
+
+	</script>
+	
+</style>
+</head>
+<body>
+<!-- header开始 -->
+	<div class = "header">
+		<div class = "logo-con">		
+			<img src="img/logo.gif"/ >
+			<div class = "welcome"></div>
+			<div class = "header-r">
+				<div class = " return return1">
+					<p class = "p1">
+						<span>15天</span>无忧退换货
+					</p class = "p1">
+					<p class = "p2">为您提供售后无忧保证</p>
+				</div>
+				<div class = " return return2">
+					<p class = "p1">
+						<span>100%</span>正品保证
+					</p class = "p1">
+					<p class = "p2">为您提供售后无忧保证</p>
+				</div>
+				<div class = " return return3">
+					<p class = "p1">
+						<span>满199</span>免运费
+					</p class = "p1">
+					<p class = "p2">为您提供售后无忧保证</p>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!-- header结束 -->
+	<!-- banner开始 -->
+	<div class = "banner">
+		<div class = "banner-con">
+			<img src="img/login.jpg"/ >
+			<div class = "log log1">
+				<div class = "logins">
+					<div class = "login">
+						<a href="#" class = "passport">注册护照</a>
+					</div>
+					<div class = "tex">已注册请<a href = "log.html" style = "color:#e5004f">登录</span></a>
+					<input type="text" placeholder="请输入手机号" style="margin-top:15px" id = "phone"/ >
+					<div class = "test">
+						<input type="text" placeholder="请输入验证码"/ id = "tele">
+						<span id = "testCode"></span>
+					</div>
+					<input type="text" placeholder="请输入密码" id = "password"/ >
+					<input type="text" placeholder="请再次确认输入密码" id = "sure"/ >
+				</div>
+				<div class = "other">
+					<p>请为护照设置密码（6到12位，英文+数字）</p>
+					<p>注册关联银泰护照后您可使用护照直接登录银泰网。银泰护照即银泰百货会员，注册后，在银泰百货商场可享受会员待遇，并可共享积分等。</p>
+				</div>
+				<button id = "btn">创建银泰护照</button>
+			</div>
+			
+		</div>
+	</div>
+	<div class = "footer footer-t">
+		<a href="#">关于银泰</a> <span> | </span>
+		<a href="#">帮助中心</a> <span> | </span>
+		<a href="#">网站地图</a> <span> | </span>
+		<a href="#">企业客户</a> <span> | </span>
+		<a href="#">网站地图</a> <span> | </span>
+		<a href="#">代理合作</a> <span> | </span>
+		<a href="#">商务合作</a> <span> | </span>
+		<a href="#">网站联盟</a> <span> | </span>
+		<a href="#">联系我们</a> <span> | </span>
+		<a href="#">加入银泰</a> <span> | </span>
+		<a href="#">版权声明</a> <span> | </span>
+		<a href="#">法律声明</a> <span> | </span>
+	</div>
+	<div class = "footer">
+		<a href="#">浙ICP备10200233号</a> 
+		<a href="#">京公网安备110105019085</a> 
+		<a href="#">增值电信业务经营许可证：浙B2-20110005</a> 
+	</div>
+	<div class = "footer-b">
+		Yintai © 2014, 银泰电子商务有限公司.
+	</div>
+	<div class = "footer">
+		<img src="img/yt-ntegrity.png"/>
+		<img src="img/cnnic.png"/>
+		<img src="img/commerce.gif"/>
+	</div >
+</body>
+</html>	

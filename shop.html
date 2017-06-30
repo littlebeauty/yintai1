@@ -1,0 +1,184 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shopping-car</title>
+	<script type="text/javascript" src = "js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src = "js/index.js"></script> 
+	<script type="text/javascript" src = "js/jquery.cookie.js"></script>
+	<script type="text/javascript" src= "js/shop.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
+</head>
+<body>
+	<div class = "header">
+		<div class = "header-r">
+			<div class = "r-right">
+				<span class = "rightImg"></span>
+				<p class = "word" style = "padding:5px"><a href = "index.html" style = "color:#666">银泰首页</a></p><span>|</span>
+			</div>
+			<div class = "r-right r_c">
+				<span class = "centerImg"></span>
+				<p class = "word" style = "padding:5px">微信</p>
+				<span class = "img"></span>
+				<span>|</span>
+				<div class = "box1">
+					<img src="img/wechat.png" style="margin: 0 10px"/ >
+				</div>
+			</div>
+			<div class = "r-right r_r">
+				<span class = "leftImg"></span>
+				<p class = "word" style = "padding:5px">手机银泰</p>
+				<span class = "img" ></span>
+				 <div class = "box2"> 
+					<img src="img/appphone.png" style="margin: 0 10px;"/ >
+				</div> 
+			</div>
+		</div>
+		<div class = "header-l">
+			<a href="#">hi，欢迎来到银泰网！</a>
+			<a href="log.html">登录</a>
+		<a href="sign.html">注册</a><span>|</span>
+			<a href="#">我的订单</a><span>|</span>
+			<div class= "l-c" style="display: flex;justify-content: space-between;align-items: center;height:100%">
+				<a href="#">我的银泰</a>
+				<span class = "img"></span>
+				<ul class = "box3">
+					<li><a href="#">我的收藏</a></li>
+					<li><a href="#">我的余额</a></li>
+					<li><a href="#">我的银元</a></li>
+					<li><a href="#">我的收藏</a></li>
+					<li><a href="#">我的余额</a></li>
+					<li><a href="#">我的银元</a></li>
+				</ul>	
+			</div>
+			<span>|</span>
+			<a href="#">银泰卡</a><span>|</span>
+			<a href="#">帮助中心</a><span>|</span>
+		</div>
+	</div>
+	<div class = "title">
+	</div>
+	<div class = "search">
+		<div class = "search-con">
+		<img src="img/logo.gif"/ >
+		</div>
+	</div>
+	<div class = "car">
+		<img src="img/mobile-adt.png" class= "shopbag"/ >
+		<div class = "car-con">
+			<div class = "shophead" >
+				<div class = "l"></div>
+				<div class = "r">
+					<div class="car-l">
+						<p>查看购物袋</p>
+						<span></span>
+						<p>STEP 1</p>
+					</div>
+					<span class = "row"></span>
+					<div class="car-c">
+						<p>填写订单详情</p>
+						<span></span>
+						<p>STEP 2</p>
+					</div>
+					<span class = "row"></span>
+					<div class="car-r">
+						<p>订单确认</p>
+						<span></span>
+						<p>STEP 3</p>
+					</div>
+				</div>
+			</div>
+			<div class = "sbox">
+				<button>继续购物</button>
+
+			</div>
+			<div class = "bigbox">
+				<div class = "number">
+				<p style = "display:flex;align-items: center;width:130px;"><span></span>全选</p>
+				<p style = "width:372px">商品</p>
+				<p style = "width:130px">单价</p>
+				<p style = "width:126px">数量</p>
+				<p style = "width:90px">获得积分</p>
+				<p style = "width:92px">操作</p>
+			</div>
+			<p style = "width:930px;height:30px;background-color: #eee;margin:0;color:#666;font-size:12px;font-weight: bold;line-height: 30px;padding-left: 10px">普通商品
+			</p>
+			<div class = "gbox">
+			
+			</div>
+			<div class = "all-t">
+				<div class = "account" >
+					<div class = "account-l">
+						<p style = "display:flex;align-items: center;width:130px;"><span></span>全选</p>
+						<p style = "margin-right: 40px;"><a href = "#">删除选中商品</a></p>
+						<p><a href = "#">继续购物</a></p>
+					</div>
+					<div class = "account-r"><p></p>请选择商品进行结算</div>
+				</div>
+				<div class  = "up"><p>商品总价：</p><span class = "sum">¥0.00</span><h6>-</h6><p
+				>节省金额：</p><span>¥0.00</span><h6>+</h6><p>运费：</p><span>¥0.00</span><h6>=</h6><p>结算金额：</p><span class = "sum">¥0.0</span></div>
+			</div>
+			<div class  = "down"><p>结算金额：<span class = "sum">¥0.00</span><button class = "bg"></button></div>
+			</div>	
+		</div>
+	</div>
+	<div class = "haa">
+		<div class = "logo-con">		
+			<div class = " return return4">
+				<p class = "p11">
+					<span>400-119-1111</span>8:00-24:00
+				</p class = "p11">
+				<p class = "p21">service@yintai.com</p>
+			</div>
+			<div class = " return return1">
+				<p class = "p11">
+					<span>15天</span>无忧退换货
+				</p class = "p11">
+				<p class = "p21">为您提供售后无忧保证</p>
+			</div>
+
+			<div class = " return return2">
+				<p class = "p11">
+					<span>100%</span>正品保证
+				</p class = "p11">
+				<p class = "p21">为您提供售后无忧保证</p>
+			</div>
+			<div class = " return return3">
+				<p class = "p11">
+					<span>满199</span>免运费
+				</p class = "p11">
+				<p class = "p21">为您提供售后无忧保证</p>
+			</div>
+		</div>	
+	</div>
+	<div class = "footer footer-t">
+		<a href="#">关于银泰</a> <span> | </span>
+		<a href="#">帮助中心</a> <span> | </span>
+		<a href="#">网站地图</a> <span> | </span>
+		<a href="#">企业客户</a> <span> | </span>
+		<a href="#">网站地图</a> <span> | </span>
+		<a href="#">代理合作</a> <span> | </span>
+		<a href="#">商务合作</a> <span> | </span>
+		<a href="#">网站联盟</a> <span> | </span>
+		<a href="#">联系我们</a> <span> | </span>
+		<a href="#">加入银泰</a> <span> | </span>
+		<a href="#">版权声明</a> <span> | </span>
+		<a href="#">法律声明</a> <span> | </span>
+	</div>
+	<div class = "footer">
+		<a href="#">浙ICP备10200233号</a> 
+		<a href="#">京公网安备110105019085</a> 
+		<a href="#">增值电信业务经营许可证：浙B2-20110005</a> 
+	</div>
+	<div class = "footer-b">
+		Yintai © 2014, 银泰电子商务有限公司.
+	</div>
+	<div class = "footer">
+		<img src="img/yt-ntegrity.png"/>
+		<img src="img/cnnic.png"/>
+		<img src="img/commerce.gif"/>
+	</div >
+</body>
+</html>

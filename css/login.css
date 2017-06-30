@@ -1,0 +1,92 @@
+
+		.header{width:100%;height: 96px;background-color: white;padding: 10px 0;
+		}
+		.logo-con{width:1192px;height: 96px;margin:0px auto;position:relative;
+		}
+		.header img{float:left;
+		}
+		.welcome{width:104px;height: 24px;display: block;
+			background:url(../img/header-login.png) top left no-repeat;overflow:hidden;position: absolute;bottom: 25px;left:215px;
+		}
+		.header .logo-con .header-r{width:600px;height:96px;float: right;display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: center;
+		}
+		.header-r .return{padding-left:47px; padding-top:22px;
+		}
+		.header-r .return1{background: url(../img/footer-01.png) left bottom no-repeat;
+		background-position:15px -65px;
+		}
+		.header-r .return2{background: url(../img/footer-01.png) left bottom no-repeat;
+		background-position:0px -138px;
+		}
+		.header-r .return3{background: url(../img/footer-01.png) left bottom no-repeat;
+		background-position:0px -210px;
+		}
+		.return .p1 {font-size:14px;color:black;margin:0;
+		}
+		.p1 span{color:black; color:#e5004f;
+		}
+		.return .p2 {font-size:12px;color:#888 ;margin:0;
+		}
+		/*banner 护照登录*/
+		.banner{width:100%;height: 480px;background-color:#f9f9f9;padding: 50px 0;overflow: hidden;
+		}
+		.banner .log2{
+			display: none;
+		}
+		.banner-con{width:1192px;height: 460px;margin:0px auto;display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: center; margin-bottom:30px;
+		}
+		.banner-con .log{width:380px;height:465px;background-color:#f3f3f3;
+		}
+		.log .login{height:20px;border-bottom: 1px solid #d8d8d8;display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: center;padding:15px 0 2px 0;background-color: white;margin-bottom:20px;
+		}
+		.log .login a{display: block;height:20px;padding:0 25px;
+			font-size:14px;color:#999;line-height: 20px;
+		}
+		.log .login span{display: block;height:20px;line-height: 20px;
+			font-size:14px;color:#d8d8d8;
+		}
+		.banner-con .log .userword{display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: center;background: white;border-top:1px solid #d8d8d8;border-bottom:1px solid #d8d8d8;padding: 0 10px;
+		}
+		.banner-con .log input{border:none;height:60px;font-size:16px;color:#adadad;width:285px;
+		}
+		.banner-con .log button{border-radius: 5px;height:50px;font-size:18px;color:white;width:356px;border:none;background-color: #e5004f;margin: 12px;
+		}
+		.banner-con .log a {font-size:14px;color:#888;
+		}
+		.banner-con .log .last{
+			display: block;float: right;color:#e5004f;font-size:14px
+		}
+		.log .another {height:20px;line-height:20px;display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: center;font-size:12px;color:#888;margin-top:40px;width:100%;
+		}
+		.log .ways {display: flex;flex-flow: row nowrap;justify-content:center ;align-items: center;font-size:12px;color:#888;margin-top:20px;
+		}
+		.log .ways a{display: block;padding:0 10px;font-size:12px;color:#888;
+		}
+		.log2 .code{
+			background-color:  white;height:407px;display: flex;flex-flow: column  nowrap;justify-content: center;align-items: center;
+		}
+		.log2 .p1{
+			margin-top:-7px;
+		}
+		.log2 .code .way {font-size:14px;color:#000;margin-top:20px;}
+		.code .limit{border: 1px solid  #e5004f;color: #e5004f;font-size:12px;padding: 5px;margin-top:20px;}
+		.code .codeImg{
+			width:350px;height:150px;background: url(../img/header-login-phone.png) center right no-repeat;opacity: 0;z-index: 4;
+		}
+		.code .codeId{background:url(../img/qrcode.jpg) center no-repeat;height:130px; width:100%;}
+		.codeId:hover{
+			background:url(../img/qrcode.jpg) 80px center  no-repeat;transition: 2S;
+		} 
+
+		/*footer*/
+		.footer {display: flex;flex-flow: row nowrap;justify-content: center;align-items: center;font-size:12px;color:#888;margin:20px;}
+		.footer span{
+			display: block;width:10px;
+		}
+		.footer a{display: block;padding:0 10px;font-size:12px;color:#888;}
+		.footer-b{margin-top:10px;text-align:center;font-size:12px;color:#888;}
+		.footer img{margin-right:20px;}
+		.footer-t a:hover{
+			color:#e5004f;
+		}
+		
